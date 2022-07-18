@@ -1,0 +1,59 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+
+:root {
+    --50-purple: #f5f3ff;
+    --100-purple: #ede9fe;
+    --200-purple: #ddd6fe;
+    --300-purple: #c4b5fd;
+    --400-purple: #a78bfa;
+    --500-purple: #8b5cf6;
+    --600-purple: #7c3aed;
+    --700-purple: #6d28d9;
+    --800-purple: #5b21b6;
+    --900-purple: #4c1d95;
+    --50-gray: #fafafa; 
+}
+
+
+.wrapper {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+
+.header {
+    grid-column: 2 / 3;
+    background-color: var(--500-purple);
+}
+
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main {
+    grid-column: 2 / 3;
+    grid-row: ;
+    background-color: var(--200-purple);
+}
+
+
+.side-bar {
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    background-color: var(--600-purple);
+}
+
+input {
+    border: 0;
+    border-radius: 25px;
+    background-color: var(--50-gray);
+}
