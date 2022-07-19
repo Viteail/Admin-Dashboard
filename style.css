@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&family=VT323&display=swap');
+
 body {
     margin: 0;
     min-height: 100vh;
@@ -16,6 +19,8 @@ body {
     --800-purple: #5b21b6;
     --900-purple: #4c1d95;
     --50-gray: #fafafa; 
+    --50-cyan: #ecfeff;
+    --white: #FFFFFF;
 }
 
 
@@ -23,13 +28,14 @@ body {
     display: grid;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr 10fr;
+    grid-template-rows: 1.5fr 10fr;
 }
 
 
 .header {
     grid-column: 2 / 3;
-    background-color: var(--500-purple);
+    display: grid;
+    background-color: var(--600-purple);
 }
 
 
@@ -41,16 +47,56 @@ body {
 
 .main {
     grid-column: 2 / 3;
-    grid-row: ;
-    background-color: var(--200-purple);
+    background-color: var(--50-cyan);
 }
 
 
 .side-bar {
     grid-row: 1 / 3;
     grid-column: 1 / 2;
-    background-color: var(--600-purple);
+    display: grid;
+    grid-template-rows: 1fr 5fr 5fr;
+    background-color: var(--700-purple);
 }
+
+
+.side-bar-logo {
+    display: flex;
+    align-items: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    background-color: var(--700-purple);
+    color: var(--white);
+}
+
+
+ul, li {
+    margin-top: 20px;
+    list-style: none;
+}
+
+
+li {
+    display: flex;
+    align-items: center;
+}
+
+
+li > img {
+    height: 30px;
+    margin-right: 5px;
+}
+
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--white);
+}
+
 
 input {
     border: 0;
